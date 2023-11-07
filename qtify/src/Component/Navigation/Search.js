@@ -19,6 +19,7 @@ const Search = () => {
         >
           <img
             src="searchicon.svg"
+            alt="search"
             style={{ height: "15px", width: "15px", paddingRight: "10px" }}
           />
         </button>
