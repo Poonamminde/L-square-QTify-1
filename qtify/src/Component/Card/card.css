@@ -1,0 +1,28 @@
+.card-container {
+  margin: 1.5rem;
+}
+.card-body {
+  width: 159px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  border-width: 5px;
+  margin-bottom: 5px;
+}
+.card-img {
+  height: 180px;
+  width: 100%;
+}
+.card-content {
+  margin: 4px;
+}
+.card-pill {
+  background-color: var(--css-black);
+  color: var(--css-white);
+  margin-top: 5px;
+  border-radius: 7px;
+  padding: 0px 5px 0px 5px;
+}
+.card-footer {
+  color: var(--css-white);
+}

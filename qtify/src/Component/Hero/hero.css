@@ -1,0 +1,11 @@
+.heading {
+  color: var(--css-white);
+  font-weight: 600;
+  font-family: "poppins";
+  size: 32px;
+  line-height: 48px;
+}
+.hero-image {
+  height: 212px;
+  width: 212px;
+}

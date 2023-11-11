@@ -11,7 +11,7 @@ export default function Navigation() {
       alignItems="center"
       className="navbar"
     >
-      <img src="logo.png" alt="qtify" />
+      <img src="logo.png" alt="qtify" className="nav-logo" />
       <Search />
       <Button />
     </Box>
