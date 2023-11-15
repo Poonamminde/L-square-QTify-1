@@ -5,7 +5,12 @@ import "./hero.css";
 
 const hero = () => {
   return (
-    <Box display="flex" justifyContent={"center"} alignItems={"center"}>
+    <Box
+      display="flex"
+      justifyContent={"center"}
+      alignItems={"center"}
+      marginBottom={2}
+    >
       <Box display="flex" flexDirection={"column"}>
         <Typography variant="h4" className="heading">
           100 Thousand Songs, ad-free

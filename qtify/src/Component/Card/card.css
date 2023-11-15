@@ -1,5 +1,5 @@
 .card-container {
-  margin: 1.5rem;
+  margin: 22px;
 }
 .card-body {
   width: 159px;
@@ -10,7 +10,7 @@
   margin-bottom: 5px;
 }
 .card-img {
-  height: 180px;
+  height: 205px;
   width: 100%;
 }
 .card-content {
@@ -21,8 +21,11 @@
   color: var(--css-white);
   margin-top: 5px;
   border-radius: 7px;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 7px 0px 7px;
 }
 .card-footer {
   color: var(--css-white);
+  height: 27px;
+  margin-top: 10px;
+  font-size: 17px;
 }

@@ -1,0 +1,15 @@
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7px;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+.section-body {
+  color: var(--css-white);
+}
+.section-title {
+  font-size: 28px;
+  margin-left: 2.5rem;
+  color: var(--css-white);
+}

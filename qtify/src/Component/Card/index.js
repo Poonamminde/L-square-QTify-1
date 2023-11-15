@@ -1,25 +1,25 @@
 import React from "react";
 import { Card, CardMedia } from "@mui/material";
 import "./card.css";
-const CardElement = () => {
+const CardElement = ({ item }) => {
   return (
     <>
       <div className="card-container">
         <Card className="card-body">
           <CardMedia
             component={"img"}
-            image={
-              "https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800"
-            }
+            image={item.image}
             alt="song card"
             style={{ margin: 0 }}
             className="card-img"
           />
           <div className="card-content">
-            <span className="card-pill">100M follows</span>
+            <span className="card-pill">{item.follows}M follows</span>
           </div>
         </Card>
-        <p className="card-footer">New Bollywood</p>
+        <div className="card-footer">
+          <p>{item.title}</p>
+        </div>
       </div>
     </>
   );
