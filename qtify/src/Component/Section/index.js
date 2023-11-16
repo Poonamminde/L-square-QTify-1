@@ -28,6 +28,7 @@ export default function Index({ label, data }) {
           <Carousel label={label} data={data} />
         )}
       </div>
+      <hr />
     </div>
   );
 }

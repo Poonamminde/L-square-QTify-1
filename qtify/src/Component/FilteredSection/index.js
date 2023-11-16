@@ -24,7 +24,7 @@ const Index = ({ genres, data }) => {
   };
 
   return (
-    <div>
+    <div className="filtered-container">
       <h1 className="filtered-section-title">Songs</h1>
       <Box style={{ marginLeft: "2.5rem" }}>
         <Tabs
@@ -63,6 +63,7 @@ const Index = ({ genres, data }) => {
           <Carousel label="Songs" data={data} />
         </div>
       )}
+      <hr />
     </div>
   );
 };

@@ -10,6 +10,7 @@ import {
 } from "./Component/API";
 import { useState, useEffect } from "react";
 import FilteredSection from "./Component/FilteredSection";
+import FAQs from "./Component/FAQs";
 
 function App() {
   let [topData, setTopData] = useState([]);
@@ -36,6 +37,7 @@ function App() {
       <Section label="Top Album" data={topData} />
       <Section label="New Album" data={newData} />
       <FilteredSection genres={genresData} data={songsData} />
+      <FAQs />
     </div>
   );
 }

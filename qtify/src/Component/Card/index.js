@@ -14,7 +14,11 @@ const CardElement = ({ item }) => {
             className="card-img"
           />
           <div className="card-content">
-            <span className="card-pill">{item.follows}M follows</span>
+            <span className="card-pill">
+              {item.follows
+                ? item.follows + "M follows"
+                : item.likes + " Likes"}
+            </span>
           </div>
         </Card>
         <div className="card-footer">

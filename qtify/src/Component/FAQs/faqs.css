@@ -1,0 +1,24 @@
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1135px;
+  top: 1661px;
+  left: 153px;
+  border-radius: 0px, 0px, 10px, 10px;
+  border: 1px;
+  background-color: var(--css-black);
+  color: var(--css-white);
+  margin: 1rem 12rem 1rem 12rem;
+}
+.faqs-heading {
+  font-size: 40px;
+  padding: 1rem;
+  font-family: "poppins";
+}
+.accordion-item {
+  width: 100%;
+  background-color: var(--css-black);
+  color: var(--css-white);
+}

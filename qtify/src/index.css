@@ -12,6 +12,9 @@ html {
 img {
   margin: 0px;
 }
+hr {
+  border: 1px solid var(--css-primary);
+}
 *::after,
 *::before {
   box-sizing: border-box;

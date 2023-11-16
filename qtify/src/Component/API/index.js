@@ -6,7 +6,7 @@ const getTopAlbum = async () => {
     const responseTopAlbum = await axios.get(`${endpoint}/albums/top`);
     return responseTopAlbum.data;
   } catch (e) {
-    return <p>Data is not loaded</p>;
+    return [];
   }
 };
 
@@ -15,7 +15,7 @@ const getNewAlbum = async () => {
     const responseNewAlbum = await axios.get(`${endpoint}/albums/new`);
     return responseNewAlbum.data;
   } catch (e) {
-    return <p>Data is not loaded</p>;
+    return [];
   }
 };
 
@@ -24,7 +24,7 @@ const getSongsAlbum = async () => {
     const responseSongsAlbum = await axios.get(`${endpoint}/songs`);
     return responseSongsAlbum.data;
   } catch (e) {
-    return <p>Data is not loaded</p>;
+    return [];
   }
 };
 
@@ -33,7 +33,7 @@ const getGenres = async () => {
     const responseGenres = await axios.get(`${endpoint}/genres`);
     return responseGenres.data;
   } catch (e) {
-    return <p>Data is not loaded</p>;
+    return [];
   }
 };
 

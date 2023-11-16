@@ -8,6 +8,7 @@
 }
 .section-body {
   color: var(--css-white);
+  margin-top: 1rem;
 }
 .section-title {
   font-size: 20px;
