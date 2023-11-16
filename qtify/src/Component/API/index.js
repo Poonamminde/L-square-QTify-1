@@ -19,4 +19,22 @@ const getNewAlbum = async () => {
   }
 };
 
-export { getTopAlbum, getNewAlbum };
+const getSongsAlbum = async () => {
+  try {
+    const responseSongsAlbum = await axios.get(`${endpoint}/songs`);
+    return responseSongsAlbum.data;
+  } catch (e) {
+    return <p>Data is not loaded</p>;
+  }
+};
+
+const getGenres = async () => {
+  try {
+    const responseGenres = await axios.get(`${endpoint}/genres`);
+    return responseGenres.data;
+  } catch (e) {
+    return <p>Data is not loaded</p>;
+  }
+};
+
+export { getTopAlbum, getNewAlbum, getSongsAlbum, getGenres };

@@ -25,7 +25,7 @@ export default function Index({ label, data }) {
             </div>
           ))
         ) : (
-          <Carousel data={data} />
+          <Carousel label={label} data={data} />
         )}
       </div>
     </div>

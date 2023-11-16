@@ -5,38 +5,42 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
 import NextIcon from "../../assets/nextIcon.png";
 import PrevIcon from "../../assets/prevIcon.png";
-import "swiper/css"; // core Swiper
-import "swiper/css/navigation"; // Navigation module
+import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./carousel.css";
-const index = ({ data }) => {
+import { useRef } from "react";
+const Index = ({ label, data }) => {
+  let swiperRef = useRef(label);
+  label = label.slice(" ");
   console.log(data);
   return (
     <>
       <Swiper
+        ref={swiperRef}
         modules={[Virtual, Navigation, Pagination]}
         virtual
         spaceBetween={30}
         slidesPerView={8}
         navigation={{
-          nextEl: ".arrow-right",
-          prevEl: ".arrow-left",
+          nextEl: `.arrow-right-${label[0]}`,
+          prevEl: `.arrow-left-${label[0]}`,
         }}
       >
-        {data.map((item, index) => (
-          <SwiperSlide key={item.id}>
+        {data.map((item) => (
+          <SwiperSlide value={label} key={item.id}>
             <Card item={item} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="arrow-left arrow">
+      <div className={`arrow-left arrow arrow-left-${label[0]}`}>
         <img src={PrevIcon} alt="prev" />
       </div>
-      <div className="arrow-right arrow">
+      <div className={`arrow-right arrow arrow-right-${label[0]}`}>
         <img src={NextIcon} alt="next" />
       </div>
     </>
   );
 };
 
-export default index;
+export default Index;

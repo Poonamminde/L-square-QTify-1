@@ -1,0 +1,17 @@
+.filtered-section-tabs {
+  color: var(--css-white);
+}
+.filtered-section-title {
+  font-size: 20px;
+  margin-left: 2.5rem;
+  color: var(--css-white);
+  margin-bottom: 0.5rem;
+}
+.filtered-slider {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7px;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  position: relative;
+}
