@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardMedia } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import "./card.css";
 const CardElement = ({ item }) => {
   return (
@@ -24,6 +25,11 @@ const CardElement = ({ item }) => {
         <div className="card-footer">
           <p>{item.title}</p>
         </div>
+        {item.songs && (
+          <Tooltip>
+            <div className="tooltip">{`${item.songs.length} songs`}</div>
+          </Tooltip>
+        )}
       </div>
     </>
   );

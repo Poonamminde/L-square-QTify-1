@@ -1,5 +1,6 @@
 .card-container {
-  margin: 22px;
+  margin: 28px;
+  position: relative;
 }
 .card-body {
   width: 159px;
@@ -28,4 +29,17 @@
   height: 27px;
   margin-top: 10px;
   font-size: 17px;
+}
+.tooltip {
+  position: absolute;
+  top: -28px;
+  display: none;
+  background-color: grey;
+  padding: 4px;
+  border-radius: 4px;
+}
+.card-container:hover .tooltip {
+  display: block;
+  margin-left: 35px;
+  opacity: 1;
 }
